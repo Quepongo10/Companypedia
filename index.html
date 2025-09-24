@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companypedia</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cabecera principal -->
+    <header aria-label="Cabecera de la página">
+        <h1>Bienvenido a Companypedia</h1>
+
+        <!-- Navegación principal -->
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#home" title="Ir a la descripción">Sobre la página</a></li>
+                <li><a href="#about" title="Conoce a las criaturas">Criaturas</a></li>
+                <li><a href="#contact" title="Encuentra información de contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main aria-label="Contenido principal de la página">
+        <!-- Sección de inicio -->
+        <section id="home">
+            <article>
+                <header>
+                    <h2>Inicio</h2>
+                </header>
+                <p>Bienvenido a nuestra página web. Aquí encontrarás información relevante sobre nuestros servicios y actividades.</p>
+                <footer>
+                    <p>Pie de la sección de inicio.</p>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Sección "Acerca de" -->
+        <section id="about">
+            <article>
+                <header>
+                    <h2>Acerca de</h2>
+                </header>
+                <p>Somos una empresa dedicada a ofrecer soluciones dinámicas y efectivas para nuestros clientes.</p>
+                <p>Con años de experiencia, nuestro equipo está comprometido con la excelencia y la innovación.</p>
+                <p>Para más información visita nuestra <a href="https://www.ejemplo.com" target="_blank" rel="noopener" title="Enlace externo a nuestra web">web oficial</a>
+                <footer>
+                    <time datetime="2020-10-08T15:13" pubdate> 3:13pm on October 8th, 2020 </time>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contact">
+            <article>
+                <header>
+                    <h2>Contacto</h2>
+                </header>
+                <p>¿Tienes alguna pregunta o necesitas más información? No dudes en contactarnos.</p>
+
+                <!-- Formulario accesible -->
+                <form action="#" method="post" aria-label="Formulario de contacto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <footer>
+                    <p>Puedes también contactarnos por redes sociales.</p>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer aria-label="Pie de la página">
+        <p>&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS externo -->
+    <script src="scripts.js"></script>
+</body>
+</html>
