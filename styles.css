@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    background-color: #333 !important;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -23,17 +24,16 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #007BFF;
     font-weight: bold;
 }
 
 /* Focus visible para accesibilidad */
-
-
 h1 {
     padding: 3rem 1em;
 }
+
 /* Secciones y artículos */
 main {
     padding: 2rem;
@@ -47,11 +47,13 @@ article {
     background-color: #fafafa;
 }
 
-/* Criaturas */.flex-container {
+/* Criaturas */
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 /* Arreglar los px de aquí para responsividad */
 .flex-container > li {
     width: 300px;
