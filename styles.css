@@ -4,6 +4,8 @@ html {
 }
 
 body {
+    background: linear-gradient(rgba(51,51,51,0.9), rgba(51,51,51,0.9)),
+    url('./otra media/ruido.png');
     background-color: #333 !important;
     margin: 0;
     padding: 0;
@@ -53,7 +55,6 @@ article {
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 5px;
-    background-color: #333;
 }
 
 /* Criaturas */
@@ -92,8 +93,8 @@ article {
 
 /* Footer */
 footer {
+    border: 1px solid #35A335;
     text-align: center;
     padding: 1rem;
-    background-color: #333;
     color: #35A335;
 }
