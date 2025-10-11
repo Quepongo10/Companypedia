@@ -50,6 +50,55 @@ main {
     padding: 2rem;
 }
 
+/*GRID*/
+main {
+    display: grid;
+    height: 40em;
+    row-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 35%;
+    grid-template-areas: 
+      "nav2 header2 header2"
+      "section2 section2 section2"
+      "section3 section3 section3"
+      "footer2 footer2 footer2";
+}
+
+header {
+    grid-area: header2;
+    /* background: blueviolet;
+    color: white; */
+}
+
+nav {
+    grid-area: nav2;
+    /* background: deeppink;
+    color: white; */
+}
+
+#about {
+    grid-area: section2;
+    /* background: white; */
+}
+
+#creatures {
+    grid-area: section3;
+    /* background: white; */
+}
+
+aside {
+    grid-area: aside2;
+    /* background: purple;
+    color: white; */
+}
+
+footer {
+    grid-area: footer2;
+    /* background: palevioletred;
+    color: white; */
+}
+
+/**/
 article {
     border: 1px solid #35A335;
     padding: 1rem;
@@ -57,7 +106,18 @@ article {
     border-radius: 5px;
 }
 
+/* About */
+#about footer {
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    font-size: 0.6rem;
+}
+
 /* Criaturas */
+#creatures {
+    margin-top: 2rem;
+}
 #creatures .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +153,7 @@ article {
 
 /* Footer */
 footer {
-    border: 1px solid #35A335;
+    /* border: 1px solid #35A335; */
     text-align: center;
     padding: 1rem;
     color: #35A335 !important;
