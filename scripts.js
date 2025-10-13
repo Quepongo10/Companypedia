@@ -1,7 +1,8 @@
 
-gsap.to("#test", {
-    rotation: 360,
-    duration: 2,
+gsap.to("#titulo_ani", {
+    opacity: 0,
     repeat: -1,
-    yoyo: true,
+    ease: "steps(1)",
+    duration: 0.5,
+    yoyo: true
 });

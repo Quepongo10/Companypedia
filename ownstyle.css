@@ -106,6 +106,10 @@ article {
     border-radius: 5px;
 }
 
+#titulo_ani {
+    display: inline;
+}
+
 /* About */
 #about footer {
     padding: 0;
@@ -126,6 +130,7 @@ article {
   gap: 5rem;
   padding-left: 0;
 }
+
 
 /* Arreglar los px de aquí para responsividad */
 .flex-container > li {
