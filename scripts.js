@@ -3,6 +3,6 @@ gsap.to("#titulo_ani", {
     opacity: 0,
     repeat: -1,
     ease: "steps(1)",
-    duration: 0.5,
+    duration: 0.4,
     yoyo: true
 });
