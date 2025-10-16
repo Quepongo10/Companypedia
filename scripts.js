@@ -1,7 +1,6 @@
-
-gsap.to("#test", {
-    rotation: 360,
+gsap.to("#telon", { 
     duration: 2,
-    repeat: -1,
-    yoyo: true,
+    height: "50%",
+    ease: "power2.inOut"
+    
 });
