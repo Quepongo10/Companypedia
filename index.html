@@ -18,7 +18,7 @@
 <body>
     <!-- Cabecera principal -->
     <header aria-label="Cabecera de la página">
-        <h1>
+        <h1 class="text-primary">
             <div id="titulo_ani">></div>Bienvenido a Companypedia
         </h1>
 
@@ -32,9 +32,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#about" title="Ir a la descripción">Sobre la
+                        <li class="nav-item"><a class="nav-link  text-link" href="#about" title="Ir a la descripción">Sobre la
                                 página</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#creatures"
+                        <li class="nav-item"><a class="nav-link  text-link" href="#filtro-caracteristicas"
+                                title="Filtra a las criaturas">Filtros</a></li>
+                        <li class="nav-item"><a class="nav-link  text-link" href="#creatures"
                                 title="Conoce a las criaturas">Criaturas</a></li>
                     </ul>
                 </div>
@@ -45,7 +47,7 @@
     <!-- Contenido principal -->
     <main aria-label="Contenido principal de la página">
         <!-- Sección de inicio -->
-        <section id="about">
+        <section class="text-primary" id="about">
             <article>
                 <header>
                     <h2>Guía del empleado</h2>
@@ -62,7 +64,7 @@
         </section>
 
         <!-- Sección "Criaturas" -->
-        <section id="creatures">
+        <section class="text-primary" id="creatures">
             <article>
                 <header>
                     <h2>Criaturas</h2>
@@ -96,22 +98,64 @@
                     <li><img src="" alt="Criatura"></li>
                 </ul>
                 <footer>
-
+                    <p> Se pide a los empleados que mantengan la discreción y la compostura al encontrarse con alguna de
+                        las criaturas. Cualquier baja ocasionada no debe interferir con el trabajo del resto.</p>
                 </footer>
             </article>
         </section>
 
+        <!-- FILTROS -->
+        <!-- Filtrado por características-->
+        <section id="filtro-caracteristicas">
+            <article>
+                <header>
+                    <h2 class="text-primary">Características</h2>
+                </header>
+                <ul class="flex-container text-primary">
+                    <li>Filtro 1</li>
+                    <li>Filtro 2</li>
+                    <li>Filtro 3</li>
+                    <li>Filtro 4</li>
+                    <li>Filtro 5</li>
+                    <li>Filtro 6</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Filtrado por zonas-->
+        <section id="filtro-zonas">
+            <article>
+                <header>
+                    <h2 class="text-primary">Lunas</h2>
+                </header>
+                <ul class="flex-container text-primary">
+                    <li>Filtro 1</li>
+                    <li>Filtro 2</li>
+                    <li>Filtro 3</li>
+                    <li>Filtro 4</li>
+                    <li>Filtro 5</li>
+                    <li>Filtro 6</li>
+                    <li>Filtro 7</li>
+                    <li>Filtro 8</li>
+                    <li>Filtro 9</li>
+                    <li>Filtro 10</li>
+                    <li>Filtro 11</li>
+                    <li>Filtro 12</li>
+                </ul>
+            </article>
+        </section>
+
         <!-- Pie de página -->
-        <footer aria-label="Pie de la página">
+        <footer class="text-primary" aria-label="Pie de la página">
             <p>Todo el contenido de esta web está inspirado o directamente sacado del videojuego Lethal Company.
                 Cualquier duda del juego refiéranse a su página de Steam.</p>
             <a href="https://store.steampowered.com/app/1966720/Lethal_Company" target="_blank"><img
                     src="./otra media/steam-1-logo-black-and-white.png" alt="Steam"></a>
             <p>&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
             <div class="flex-container row justify-content-center">
-                <a href="#" class="col-12 col-md-2">Contacto</a>
-                <a href="#" class="col-12 col-md-2">Aviso legal</a>
-                <a href="#" class="col-12 col-md-2">Privacidad</a>
+                <a href="#" class="col-12 col-md-2  text-link">Contacto</a>
+                <a href="#" class="col-12 col-md-2  text-link">Aviso legal</a>
+                <a href="#" class="col-12 col-md-2  text-link">Privacidad</a>
             </div>
         </footer>
 
