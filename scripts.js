@@ -1,7 +1,7 @@
 let tl = gsap.timeline();
 
 // Animación de apertura del telón y desaparición del loading screen
-tl.to("#telon", { duration: 2, height: "50%", ease: "power2.inOut", delay: 2 })
+tl.to("#telon", { duration: 2, height: "50%", ease: "power2.inOut", delay: 1.5 })
   .to("#telon", { duration: 2, height: "0.25%", ease: "power2.inOut", delay: 0.5 })
   .to("#suelo", { duration: 2, opacity: 0, ease: "power2.inOut", delay: 0 })
   .to("#telon", { duration: 1, top: "0%", ease: "power2.inOut" }, "-=1.5")
