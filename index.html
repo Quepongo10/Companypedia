@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="ownstyle.css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Bootstrap/styles.css">
 
 </head>
 
@@ -24,39 +25,72 @@
 
     <!-- Cabecera principal -->
     <header aria-label="Cabecera de la página">
-        <h1>Bienvenido a Companypedia</h1>
+        <h1 class="text-primary">
+            <div id="titulo_ani">></div>Bienvenido a Companypedia
+        </h1>
+
+        <!-- Navegación principal -->
+        <nav class="navbar navbar-expand-sm" aria-label="Navegación principal">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link  text-link" href="#about" title="Ir a la descripción">Sobre la
+                                página</a></li>
+                        <li class="nav-item"><a class="nav-link  text-link" href="#filtro-caracteristicas"
+                                title="Filtra a las criaturas">Filtros</a></li>
+                        <li class="nav-item"><a class="nav-link  text-link" href="#creatures"
+                                title="Conoce a las criaturas">Criaturas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Contenido principal -->
     <main aria-label="Contenido principal de la página">
         <!-- Sección de inicio -->
-        <section id="about">
+        <section class="text-primary" id="about">
             <article>
                 <header>
                     <h2>Guía del empleado</h2>
                 </header>
-                <p>En nombre de la compañía se te ha facilitado este archivo que contiene regístros de las criaturas encontradas en las lunas cercanas. Recuerda utilizar esta información para garantizar tu supervivencia y la de tu equipo.</p>
+                <p>En nombre de la compañía se te ha facilitado este archivo que contiene regístros de las criaturas
+                    encontradas en las lunas cercanas. Recuerda utilizar esta información para garantizar tu
+                    supervivencia y la de tu equipo.</p>
                 <footer>
-                    <p>La procedencia de estos recursos no es exacta y puede contener algún tipo de error. La compañía no se hace responsable de posibles accidentes ocasionados por la falta de la información precisa.</p>
+                    <p>La procedencia de estos recursos no es exacta y puede contener algún tipo de error. La compañía
+                        no se hace responsable de posibles accidentes ocasionados por la falta de la información
+                        precisa.</p>
                 </footer>
             </article>
         </section>
 
         <!-- Sección "Criaturas" -->
-        <section id="creatures">
+        <section class="text-primary" id="creatures">
             <article>
                 <header>
                     <h2>Criaturas</h2>
                 </header>
                 <ul class="flex-container">
-                    <li><img src="/iconos/baboon hawkg.svg" alt="Baboon hawk"></li>
-                    <li><img src="/iconos/barberg.svg" alt="Barber"></li>
-                    <li><img src="/iconos/brackeng.svg" alt="Bracken"></li>
-                    <li><img src="/iconos/bunker spiderg.svg" alt="Bunker spider"></li>
-                    <li><img src="/iconos/butlerg.svg" alt="Butler"></li>
-                    <li><img src="/iconos/circuit beesg.svg" alt="Circuit bees"></li>
-                    <li><img src="/iconos/coil headg.svg" alt="Coil head"></li>
-                    <li><img src="/iconos/earth leviathang.svg" alt="Earth leviathan"></li>
+                    <li><img src="./iconos/baboon hawkg.svg" alt="Baboon hawk"></li>
+                    <li><img src="./iconos/barberg.svg" alt="Barber"></li>
+                    <li><img src="./iconos/brackeng.svg" alt="Bracken"></li>
+                    <li><img src="./iconos/bunker spiderg.svg" alt="Bunker spider"></li>
+                    <li><img src="./iconos/butlerg.svg" alt="Butler"></li>
+                    <li><img src="./iconos/circuit beesg.svg" alt="Circuit bees"></li>
+                    <li><img src="./iconos/coil headg.svg" alt="Coil head"></li>
+                    <li><img src="./iconos/earth leviathang.svg" alt="Earth leviathan"></li>
+                    <li><img src="./iconos/eyeless dogg.svg" alt="Eyeless dog"></li>
+                    <li><img src="./iconos/forest keeperg.svg" alt="Forest keeper"></li>
+                    <li><img src="./iconos/ghost girlg.svg" alt="Ghost girl"></li>
+                    <li><img src="./iconos/Hoarding Bugg.svg" alt="Hoarding bug"></li>
+                    <li><img src="./iconos/Hygrodereg.svg" alt="Hygrodere"></li>
+                    <li><img src="./iconos/Jesterg.svg" alt="Jester"></li>
                     <li><img src="" alt="Criatura"></li>
                     <li><img src="" alt="Criatura"></li>
                     <li><img src="" alt="Criatura"></li>
@@ -69,30 +103,75 @@
                     <li><img src="" alt="Criatura"></li>
                     <li><img src="" alt="Criatura"></li>
                     <li><img src="" alt="Criatura"></li>
-                    <li><img src="" alt="Criatura"></li>
-                    <li><img src="" alt="Criatura"></li>
-                    <li><img src="" alt="Criatura"></li>
-                    <li><img src="" alt="Criatura"></li>
-                    <li><img src="" alt="Criatura"></li>
-                    <li><img src="" alt="Criatura"></li>
-                    </ul>
+                </ul>
                 <footer>
-                    
+                    <p> Se pide a los empleados que mantengan la discreción y la compostura al encontrarse con alguna de
+                        las criaturas. Cualquier baja ocasionada no debe interferir con el trabajo del resto.</p>
                 </footer>
             </article>
         </section>
 
-    <!-- Pie de página -->
-    <footer aria-label="Pie de la página">
-        <p>&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
-        <time datetime="2020-10-08T15:13" pubdate> 3:13pm on October 8th, 2020 </time>
-    </footer>
+        <!-- FILTROS -->
+        <!-- Filtrado por características-->
+        <section id="filtro-caracteristicas">
+            <article>
+                <header>
+                    <h2 class="text-primary">Características</h2>
+                </header>
+                <ul class="flex-container text-primary">
+                    <li>Filtro 1</li>
+                    <li>Filtro 2</li>
+                    <li>Filtro 3</li>
+                    <li>Filtro 4</li>
+                    <li>Filtro 5</li>
+                    <li>Filtro 6</li>
+                </ul>
+            </article>
+        </section>
 
-    <!-- JS externo -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="scripts.js"></script>
+        <!-- Filtrado por zonas-->
+        <section id="filtro-zonas">
+            <article>
+                <header>
+                    <h2 class="text-primary">Lunas</h2>
+                </header>
+                <ul class="flex-container text-primary">
+                    <li>Filtro 1</li>
+                    <li>Filtro 2</li>
+                    <li>Filtro 3</li>
+                    <li>Filtro 4</li>
+                    <li>Filtro 5</li>
+                    <li>Filtro 6</li>
+                    <li>Filtro 7</li>
+                    <li>Filtro 8</li>
+                    <li>Filtro 9</li>
+                    <li>Filtro 10</li>
+                    <li>Filtro 11</li>
+                    <li>Filtro 12</li>
+                </ul>
+            </article>
+        </section>
 
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Pie de página -->
+        <footer class="text-primary" aria-label="Pie de la página">
+            <p>Todo el contenido de esta web está inspirado o directamente sacado del videojuego Lethal Company.
+                Cualquier duda del juego refiéranse a su página de Steam.</p>
+            <a href="https://store.steampowered.com/app/1966720/Lethal_Company" target="_blank"><img
+                    src="./otra media/steam-1-logo-black-and-white.png" alt="Steam"></a>
+            <p>&copy; 2025 Prácticas Web Dinámica Inc. Todos los derechos reservados.</p>
+            <div class="flex-container row justify-content-center">
+                <a href="#" class="col-12 col-md-2  text-link">Contacto</a>
+                <a href="#" class="col-12 col-md-2  text-link">Aviso legal</a>
+                <a href="#" class="col-12 col-md-2  text-link">Privacidad</a>
+            </div>
+        </footer>
+
+        <!-- JS Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JS GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <!-- JS personalizado -->
+        <script src="scripts.js"></script>
 </body>
+
 </html>

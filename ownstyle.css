@@ -68,30 +68,87 @@ nav li {
     margin: 0 1rem;
 }
 
-nav a {
-    text-decoration: underline;
-    color: #3aff3a;
-    font-weight: bold;
+a {
+    text-decoration: underline !important;
+    font-weight: bold !important;
 }
 
 /* Focus visible para accesibilidad */
 h1 {
     padding: 3rem 1em;
-    color: #35A335 !important;
+    color: #35A335;
 }
 
-h2 {
-    color: #35A335 !Important;
+h2{
+    color: #35A335;
 }
 
-p {
-    color: #35A335 !Important;
+p{
+    color: #35A335;
 }
 
 /* Secciones y artículos */
 main {
     padding: 2rem;
 }
+
+/*GRID*/
+main {
+    display: grid;
+    height: 40em;
+    row-gap: 4rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 35%;
+    grid-template-areas:
+        "nav2 header2 header2"
+        "section2 section2 section2"
+        "section4 section5 section5"
+        "section3 section3 section3"
+        "footer2 footer2 footer2";
+}
+
+header {
+    grid-area: header2;
+    /* background: blueviolet;
+    color: white; */
+}
+
+nav {
+    grid-area: nav2;
+    /* background: deeppink;
+    color: white; */
+}
+
+#about {
+    grid-area: section2;
+    /* background: white; */
+}
+
+#creatures {
+    grid-area: section3;
+    /* background: white; */
+}
+
+#filtro-caracteristicas {
+    grid-area: section4;
+    /* background: orange;
+    color: white; */
+}
+
+#filtro-zonas {
+    grid-area: section5;
+    /* background: yellow;
+    color: black; */
+}
+
+footer {
+    grid-area: footer2;
+    /* background: palevioletred;
+    color: white; */
+}
+
+/*Fin del grid*/
 
 article {
     border: 1px solid #35A335;
@@ -103,7 +160,23 @@ article {
     padding-bottom: 5rem;
 }
 
+#titulo_ani {
+    display: inline;
+}
+
+/* About */
+section footer {
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    font-size: 0.6rem;
+}
+
 /* Criaturas */
+#creatures {
+    margin-top: 2rem;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +187,7 @@ article {
 }
 
 /* Arreglar los px de aquí para responsividad */
-.flex-container>li {
+.flex-container > li {
     width: 300px;
     height: 300px;
     /* margin-inline: 0.5%; */
@@ -130,23 +203,49 @@ article {
     /* overflow: hidden; */
 }
 
-.flex-container>li img {
+.flex-container > li img {
     width: 90%;
     height: 90%;
     /* display: block; */
     /* object-fit: cover; */
 }
 
+/* Filtros */
+/* Características */
+
+#filtro-caracteristicas .flex-container {
+    gap: 2rem;
+}
+
+#filtro-caracteristicas .flex-container>li {
+    box-sizing: border-box;
+    border: 4px solid #35A335;
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
+/* Zonas */
+
+#filtro-zonas .flex-container {
+    gap: 2rem;
+}
+
+#filtro-zonas .flex-container>li {
+    box-sizing: border-box;
+    border: 4px solid #35A335;
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
 /* Footer */
 footer {
-    border: 1px solid #35A335;
+    /* border: 1px solid #35A335; */
     text-align: center;
     padding: 1rem;
-    color: #35A335;
 }
 
 #test {
     width: 80px;
     height: 80px;
-    background-color: #3aff3a;
+    background-color:#3aff3a;
 }
