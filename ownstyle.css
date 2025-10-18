@@ -23,6 +23,7 @@ div #telon {
     width: 75%;
     height: 0.25%;
     background-color: #35A335;
+    border: #35A335;
     z-index: 9999;
 }
 
