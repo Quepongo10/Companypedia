@@ -55,8 +55,24 @@ body {
     grid-template-areas:
         "header2 header2 nav2"
         "main2 main2 main2"
+}   
+
+@media (max-width: 768px) {
+
+body {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+
+"header2"
+"nav2"
+"main2";
+
 }
-main {
+}
+
+main { 
     display: grid;
     height: 40em;
     row-gap: 5rem;
@@ -68,6 +84,29 @@ main {
         "section4 section5 section5"
         "section3 section3 section3"
         "footer2 footer2 footer2";
+}
+
+@media (max-width: 768px) {
+
+main {
+padding:0;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 35%;
+
+grid-template-areas:
+
+"section2"
+
+"section4"
+
+"section5"
+
+"section3"
+
+"footer2";
+
+}
+
 }
 
 main {
@@ -205,12 +244,13 @@ footer {
     padding: 1rem;
 }
 
-footer>a img {
-    width: 50px;
-    height: auto;
+footer>a i {
+    font-size: 2rem;
     margin: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 footer .flex-container {
-    gap: -1rem;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
 }
