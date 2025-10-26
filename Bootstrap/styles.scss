@@ -5,7 +5,7 @@ $link: #3ae93a;
 $theme-colors: (
 	"primary": $primary,
 	"secondary": $secondary,
-	"link": $link
+	"link": $link,
 );
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
