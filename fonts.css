@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Monoid";
+  src: url("./otramedia/MonoidNerdFontPropo-Regular.ttf");
+}
+
+h1, h2, p, a {
+      font-family: "Monoid";
+    }

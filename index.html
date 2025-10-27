@@ -70,46 +70,6 @@
             </article>
         </section>
 
-        <!-- Sección "Criaturas" -->
-        <section class="text-primary" id="creatures">
-            <article>
-                <header>
-                    <h2>Criaturas</h2>
-                </header>
-                <ul class="flex-container">
-                    <li><a href="" class="nav-link"><img src="./iconos/baboonhawkg.svg" alt="Baboon hawk"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/barberg.svg" alt="Barber"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/brackeng.svg" alt="Bracken"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/bunkerspiderg.svg" alt="Bunker spider"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/butlerg.svg" alt="Butler"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/circuitbeesg.svg" alt="Circuit bees"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/coilheadg.svg" alt="Coil head"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/earthleviathang.svg" alt="Earth leviathan"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/eyelessdogg.svg" alt="Eyeless dog"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/forestkeeperg.svg" alt="Forest keeper"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/ghostgirlg.svg" alt="Ghost girl"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/hoardingbugg.svg" alt="Hoarding bug"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/hygrodereg.svg" alt="Hygrodere"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/jesterg.svg" alt="Jester"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/maneaterg.svg" alt="Maneater"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/manticoilg.svg" alt="Manticoil"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/maskedg.svg" alt="Masked"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/maskedhornetg.svg" alt="Masked hornet"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/nutcrackerg.svg" alt="Nutcracker"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/oldbirdg.svg" alt="Old bird"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/roaminglocustg.svg" alt="Roaming locust"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/snarefleag.svg" alt="Snare flea"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/sporelizardg.svg" alt="Spore lizard"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/thumperg.svg" alt="Thumper"></a></li>
-                    <li><a href="" class="nav-link"><img src="./iconos/tulipsnakeg.svg" alt="Tulip snake"></a></li>
-                </ul>
-                <footer>
-                    <p> Se pide a los empleados que mantengan la discreción y la compostura al encontrarse con alguna de
-                        las criaturas. Cualquier baja ocasionada no debe interferir con el trabajo del resto.</p>
-                </footer>
-            </article>
-        </section>
-
         <!-- FILTROS -->
         <!-- Filtrado por características-->
         <section id="filtro-caracteristicas">
@@ -117,15 +77,15 @@
                 <header>
                     <h2 class="text-primary">Características</h2>
                 </header>
-                <ul class="flex-container text-primary">
-                    <li>Pacífico</li>
-                    <li>Neutral</li>
-                    <li>Agresivo</li>
-                    <li>Interior</li>
-                    <li>Exterior</li>
-                    <li>Veloz</li>
-                    <li>Lento</li>
-                </ul>
+                <div class="flex-container text-primary">
+                    <button class="filtro1 nav-link" onclick="pacifico()">Pacífico</button>
+                    <button class="filtro2 nav-link" onclick="neutral()">Neutral</button>
+                    <button class="filtro3 nav-link" onclick="agresivo()">Agresivo</button>
+                    <button class="filtro4 nav-link" onclick="interior()">Interior</button>
+                    <button class="filtro5 nav-link" onclick="exterior()">Exterior</button>
+                    <button class="filtro6 nav-link" onclick="veloz()">Veloz</button>
+                    <button class="filtro7 nav-link" onclick="lento()">Lento</button>
+                </div>
             </article>
         </section>
 
@@ -135,20 +95,60 @@
                 <header>
                     <h2 class="text-primary">Lunas</h2>
                 </header>
-                <ul class="flex-container text-primary">
-                    <li>71-Gordion</li>
-                    <li>41-Experimentation</li>
-                    <li>220-Assurance</li>
-                    <li>56-Vow</li>
-                    <li>21-Offense</li>
-                    <li>61-March</li>
-                    <li>20-Adamance</li>
-                    <li>85-Rend</li>
-                    <li>7-Dine</li>
-                    <li>8-Titan</li>
-                    <li>68-Artifice</li>
-                    <li>5-Embrion</li>
+                <div class="flex-container text-primary">
+                    <button class="filtro8 nav-link" onclick="gordion()">71-Gordion</button>
+                    <button class="filtro9 nav-link" onclick="experimentation()">41-Experimentation</button>
+                    <button class="filtro10 nav-link" onclick="assurance()">220-Assurance</button>
+                    <button class="filtro11 nav-link" onclick="vow()">56-Vow</button>
+                    <button class="filtro12 nav-link" onclick="offense()">21-Offense</button>
+                    <button class="filtro13 nav-link" onclick="march()">61-March</button>
+                    <button class="filtro14 nav-link" onclick="adamance()">20-Adamance</button>
+                    <button class="filtro15 nav-link" onclick="rend()">85-Rend</button>
+                    <button class="filtro16 nav-link" onclick="dine()">7-Dine</button>
+                    <button class="filtro17 nav-link" onclick="titan()">8-Titan</button>
+                    <button class="filtro18 nav-link" onclick="artifice()">68-Artifice</button>
+                    <button class="filtro19 nav-link" onclick="embrion()">5-Embrion</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección "Criaturas" -->
+        <section class="text-primary" id="creatures">
+            <article>
+                <header>
+                    <h2>Criaturas</h2>
+                </header>
+                <ul class="flex-container">
+                    <li class="agresivo exterior lento adamance march offense vow assurance artifice"><a href="" class="nav-link "><img src="./iconos/baboonhawkg.svg" alt="Baboon hawk"></a></li>
+                    <li class="agresivo interior lento dine embrion vow rend artifice assurance adamance"><a href="" class="nav-link"><img src="./iconos/barberg.svg" alt="Barber"></a></li>
+                    <li class="agresivo interior veloz vow march rend titan adamance artifice dine experimentation assurance offense embrion"><a href="" class="nav-link"><img src="./iconos/brackeng.svg" alt="Bracken"></a></li>
+                    <li class="neutral interior lento experimentation assurance march offense adamance vow titan rend artifice embrion dine"><a href="" class="nav-link"><img src="./iconos/bunkerspiderg.svg" alt="Bunker spider"></a></li>
+                    <li class="agresivo interior lento dine artifice rend adamance"><a href="" class="nav-link"><img src="./iconos/butlerg.svg" alt="Butler"></a></li>
+                    <li class="neutral exterior veloz march vow artifice experimentation assurance adamance"><a href="" class="nav-link"><img src="./iconos/circuitbeesg.svg" alt="Circuit bees"></a></li>
+                    <li class="agresivo interior veloz offense titan rend embrion artifice dine march adamance vow"><a href="" class="nav-link"><img src="./iconos/coilheadg.svg" alt="Coil head"></a></li>
+                    <li class="agresivo exterior lento assurance experimentation offense vow march embrion adamance artifice titan dine"><a href="" class="nav-link"><img src="./iconos/earthleviathang.svg" alt="Earth leviathan"></a></li>
+                    <li class="agresivo exterior veloz titan experimentation rend offense assurance dine adamance artifice march embrion vow"><a href="" class="nav-link"><img src="./iconos/eyelessdogg.svg" alt="Eyeless dog"></a></li>
+                    <li class="agresivo exterior veloz vow dine rend march titan artifice adamance offense embrion experimentation assurance"><a href="" class="nav-link"><img src="./iconos/forestkeeperg.svg" alt="Forest keeper"></a></li>
+                    <li class="agresivo lento rend titan artifice dine adamance experimentation assurance"><a href="" class="nav-link"><img src="./iconos/ghostgirlg.svg" alt="Ghost girl"></a></li>
+                    <li class="neutral interior veloz embrion assurance vow adamance experimentation march artifice dine offense titan"><a href="" class="nav-link"><img src="./iconos/hoardingbugg.svg" alt="Hoarding bug"></a></li>
+                    <li class="agresivo interior lento offense embrion experimentation vow assurance artifice march adamance titan dine rend"><a href="" class="nav-link"><img src="./iconos/hygrodereg.svg" alt="Hygrodere"></a></li>
+                    <li class="agresivo interior veloz rend titan artifice dine adamance march"><a href="" class="nav-link"><img src="./iconos/jesterg.svg" alt="Jester"></a></li>
+                    <li class="neutral interior veloz vow adamance assurance offense artifice march dine"><a href="" class="nav-link"><img src="./iconos/maneaterg.svg" alt="Maneater"></a></li>
+                    <li class="pacifico exterior lento embrion offense artifice experimentation adamance assurance vow march"><a href="" class="nav-link"><img src="./iconos/manticoilg.svg" alt="Manticoil"></a></li>
+                    <li class="agresivo lento artifice rend titan adamance"><a href="" class="nav-link"><img src="./iconos/maskedg.svg" alt="Masked"></a></li>
+                    <li class="agresivo interior veloz dine artifice rend adamance"><a href="" class="nav-link"><img src="./iconos/maskedhornetg.svg" alt="Masked hornet"></a></li>
+                    <li class="neutral interior lento rend titan artifice embrion dine adamance march offense experimentation assurance"><a href="" class="nav-link"><img src="./iconos/nutcrackerg.svg" alt="Nutcracker"></a></li>
+                    <li class="agresivo exterior embrion artifice dine titan offense experimentation adamance"><a href="" class="nav-link"><img src="./iconos/oldbirdg.svg" alt="Old bird"></a></li>
+                    <li class="pacifico exterior vow adamance experimentation assurance march"><a href="" class="nav-link"><img src="./iconos/roaminglocustg.svg" alt="Roaming locust"></a></li>
+                    <li class="agresivo interior lento assurance experimentation vow march offense adamance titan rend artifice embrion dine"><a href="" class="nav-link"><img src="./iconos/snarefleag.svg" alt="Snare flea"></a></li>
+                    <li class="neutral interior lento embrion experimentation adamance artifice vow assurance offense dine march titan rend"><a href="" class="nav-link"><img src="./iconos/sporelizardg.svg" alt="Spore lizard"></a></li>
+                    <li class="agresivo interior veloz offense march adamance embrion titan artifice assurance experimentation dine vow"><a href="" class="nav-link"><img src="./iconos/thumperg.svg" alt="Thumper"></a></li>
+                    <li class="agresivo exterior veloz adamance assurance march artifice experimentation vow"><a href="" class="nav-link"><img src="./iconos/tulipsnakeg.svg" alt="Tulip snake"></a></li>
                 </ul>
+                <footer>
+                    <p> Se pide a los empleados que mantengan la discreción y la compostura al encontrarse con alguna de
+                        las criaturas. Cualquier baja ocasionada no debe interferir con el trabajo del resto.</p>
+                </footer>
             </article>
         </section>
 
@@ -173,6 +173,7 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
         <!-- JS personalizado -->
         <script src="scripts.js"></script>
+        <script src="filtro.js"></script>
 </body>
 
 </html>
