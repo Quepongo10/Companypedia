@@ -1,16 +1,13 @@
 // Filtros de características
 let filtropacifico = 'off';
 function pacifico() {
-    let criaturas = document.querySelectorAll('.pacifico');
-    let boton = document.querySelector('.filtro1');
-    criaturas.forEach(function (criatura) {
-
-        if (criatura.style.display === 'block' && filtropacifico == 'off') {
-            if (criatura.style.display === 'none' && filtropacifico == 'on') {
-                criatura.style.display = 'block';
-            } else {
-                criatura.style.display = 'none';
-            }
+    let criaturas=document.querySelectorAll('.pacifico');
+    let boton=document.querySelector('.filtro1');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
+            criatura.style.display = 'block';
+        } else {
+            criatura.style.display = 'none';
         }
     });
     if (filtropacifico == 'off') {
@@ -25,10 +22,10 @@ function pacifico() {
 
 let filtroneutral = 'off';
 function neutral() {
-    let criaturas = document.querySelectorAll('.neutral');
-    let boton = document.querySelector('.filtro2');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none' && filtroneutral == 'on') {
+    let criaturas=document.querySelectorAll('.neutral');
+    let boton=document.querySelector('.filtro2');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -46,10 +43,10 @@ function neutral() {
 
 let filtroagresivo = 'off';
 function agresivo() {
-    let criaturas = document.querySelectorAll('.agresivo');
-    let boton = document.querySelector('.filtro3');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none' && filtroagresivo == 'on') {
+    let criaturas=document.querySelectorAll('.agresivo');
+    let boton=document.querySelector('.filtro3');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -67,10 +64,10 @@ function agresivo() {
 
 let filtrointerior = 'off';
 function interior() {
-    let criaturas = document.querySelectorAll('.interior');
-    let boton = document.querySelector('.filtro4');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none' && filtrointerior == 'on') {
+    let criaturas=document.querySelectorAll('.interior');
+    let boton=document.querySelector('.filtro4');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -88,10 +85,10 @@ function interior() {
 
 let filtroexterior = 'off';
 function exterior() {
-    let criaturas = document.querySelectorAll('.exterior');
-    let boton = document.querySelector('.filtro5');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none' && filtroexterior == 'on') {
+    let criaturas=document.querySelectorAll('.exterior');
+    let boton=document.querySelector('.filtro5');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -109,10 +106,10 @@ function exterior() {
 
 let filtroveloz = 'off';
 function veloz() {
-    let criaturas = document.querySelectorAll('.veloz');
-    let boton = document.querySelector('.filtro6');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none' && filtroveloz == 'on') {
+    let criaturas=document.querySelectorAll('.veloz');
+    let boton=document.querySelector('.filtro6');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -130,10 +127,10 @@ function veloz() {
 
 let filtrolento = 'off';
 function lento() {
-    let criaturas = document.querySelectorAll('.lento');
-    let boton = document.querySelector('.filtro7');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none' && filtrolento == 'on') {
+    let criaturas=document.querySelectorAll('.lento');
+    let boton=document.querySelector('.filtro7');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -152,10 +149,10 @@ function lento() {
 //Filtro de zonas
 let filtrogordion = 'off';
 function gordion() {
-    let criaturas = document.querySelectorAll('.gordion');
-    let boton = document.querySelector('.filtro8');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.gordion');
+    let boton=document.querySelector('.filtro8');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -173,10 +170,10 @@ function gordion() {
 
 let filtroexperimentation = 'off';
 function experimentation() {
-    let criaturas = document.querySelectorAll('.experimentation');
-    let boton = document.querySelector('.filtro9');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.experimentation');
+    let boton=document.querySelector('.filtro9');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -194,10 +191,10 @@ function experimentation() {
 
 let filtroassurance = 'off';
 function assurance() {
-    let criaturas = document.querySelectorAll('.assurance');
-    let boton = document.querySelector('.filtro10');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.assurance');
+    let boton=document.querySelector('.filtro10');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -213,12 +210,12 @@ function assurance() {
     }
 }
 
-let filtrovow = 'off';
+let filtrovow= 'off';
 function vow() {
-    let criaturas = document.querySelectorAll('.vow');
-    let boton = document.querySelector('.filtro11');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.vow');
+    let boton=document.querySelector('.filtro11');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -236,10 +233,10 @@ function vow() {
 
 let filtrooffense = 'off';
 function offense() {
-    let criaturas = document.querySelectorAll('.offense');
-    let boton = document.querySelector('.filtro12');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.offense');
+    let boton=document.querySelector('.filtro12');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -257,10 +254,10 @@ function offense() {
 
 let filtromarch = 'off';
 function march() {
-    let criaturas = document.querySelectorAll('.march');
-    let boton = document.querySelector('.filtro13');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.march');
+    let boton=document.querySelector('.filtro13');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -278,10 +275,10 @@ function march() {
 
 let filtroadamance = 'off';
 function adamance() {
-    let criaturas = document.querySelectorAll('.adamance');
-    let boton = document.querySelector('.filtro14');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.adamance');
+    let boton=document.querySelector('.filtro14');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -299,10 +296,10 @@ function adamance() {
 
 let filtroerend = 'off';
 function rend() {
-    let criaturas = document.querySelectorAll('.rend');
-    let boton = document.querySelector('.filtro15');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.rend');
+    let boton=document.querySelector('.filtro15');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -320,10 +317,10 @@ function rend() {
 
 let filtrodine = 'off';
 function dine() {
-    let criaturas = document.querySelectorAll('.dine');
-    let boton = document.querySelector('.filtro16');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.dine');
+    let boton=document.querySelector('.filtro16');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -341,10 +338,10 @@ function dine() {
 
 let filtrotitan = 'off';
 function titan() {
-    let criaturas = document.querySelectorAll('.titan');
-    let boton = document.querySelector('.filtro17');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.titan');
+    let boton=document.querySelector('.filtro17');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -362,10 +359,10 @@ function titan() {
 
 let filtroartifice = 'off';
 function artifice() {
-    let criaturas = document.querySelectorAll('.artifice');
-    let boton = document.querySelector('.filtro18');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.artifice');
+    let boton=document.querySelector('.filtro18');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
@@ -383,10 +380,10 @@ function artifice() {
 
 let filtroembrion = 'off';
 function embrion() {
-    let criaturas = document.querySelectorAll('.embrion');
-    let boton = document.querySelector('.filtro19');
-    criaturas.forEach(function (criatura) {
-        if (criatura.style.display === 'none') {
+    let criaturas=document.querySelectorAll('.embrion');
+    let boton=document.querySelector('.filtro19');
+    criaturas.forEach(function(criatura) {
+        if (criatura.style.display ==='none'){
             criatura.style.display = 'block';
         } else {
             criatura.style.display = 'none';
