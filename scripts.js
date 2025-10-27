@@ -13,30 +13,30 @@ gsap.to("#titulo_ani", {
     yoyo: true
 });
 
-let scrambletl = gsap.timeline();
+// let scrambletl = gsap.timeline();
 let x = 1;
 gsap.registerPlugin(ScrambleTextPlugin);
 
-scrambletl.to(".scramble-text1", {
-    duration: 3,
-    scrambleText: {
-        text: "En nombre de la compañía se te ha facilitado este archivo que contiene regístros de las criaturas encontradas en las lunas cercanas. Recuerda utilizar esta información para garantizar tu supervivencia y la de tu equipo.",
-        chars: "upperCase",
-        revealDelay: 0.5,
-        speed: 0.3
-    },
-    ease: "power2.inOut"
-})
-    .to(".scramble-text2", {
-        duration: 3,
-        scrambleText: {
-            text: "La procedencia de estos recursos no es exacta y puede contener algún tipo de error. La compañía no se hace responsable de posibles accidentes ocasionados por la falta de la información precisa.",
-            chars: "lowerCase",
-            revealDelay: 0.5,
-            speed: 0.3
-        },
-        ease: "power2.inOut"
-    });
+// scrambletl.to(".scramble-text1", {
+//     duration: 3,
+//     scrambleText: {
+//         text: "En nombre de la compañía se te ha facilitado este archivo que contiene regístros de las criaturas encontradas en las lunas cercanas. Recuerda utilizar esta información para garantizar tu supervivencia y la de tu equipo.",
+//         chars: "upperCase",
+//         revealDelay: 0.5,
+//         speed: 0.3
+//     },
+//     ease: "power2.inOut"
+// })
+//     .to(".scramble-text2", {
+//         duration: 3,
+//         scrambleText: {
+//             text: "La procedencia de estos recursos no es exacta y puede contener algún tipo de error. La compañía no se hace responsable de posibles accidentes ocasionados por la falta de la información precisa.",
+//             chars: "lowerCase",
+//             revealDelay: 0.5,
+//             speed: 0.3
+//         },
+//         ease: "power2.inOut"
+//     });
   let tl = gsap.timeline();
 
   // Animación de apertura del telón y desaparición del loading screen
@@ -46,7 +46,27 @@ scrambletl.to(".scramble-text1", {
     .to("#telon", { duration: 0.5*x, top: "0%", ease: "power2.inOut" }, "-=0.75")
     .to("#suelo", { duration: 0.5*x, top: "100%", ease: "power2.inOut" }, "-=0.75")
     .to("#titulo_load", { duration: 0.25*x, opacity: 0 } , "-=1.75")
-    .to("#loading-screen", { duration: 0.5*x, opacity: 0, display: "none", ease: "power2.inOut" }, "-=0.5");
+    .to("#loading-screen", { duration: 0.5*x, opacity: 0, display: "none", ease: "power2.inOut" }, "-=0.5")
+    .to(".scramble-text1", {
+    duration: 3,
+    scrambleText: {
+        text: "En nombre de la compañía se te ha facilitado este archivo que contiene regístros de las criaturas encontradas en las lunas cercanas. Recuerda utilizar esta información para garantizar tu supervivencia y la de tu equipo.",
+        chars: "upperCase",
+        revealDelay: 0.5,
+        speed: 0.3
+    },
+    ease: "power2.inOut"
+})
+.to(".scramble-text2", {
+        duration: 3,
+        scrambleText: {
+            text: "La procedencia de estos recursos no es exacta y puede contener algún tipo de error. La compañía no se hace responsable de posibles accidentes ocasionados por la falta de la información precisa.",
+            chars: "lowerCase",
+            revealDelay: 0.5,
+            speed: 0.3
+        },
+        ease: "power2.inOut"
+    });
 
   // Timeline controlado por scroll usando ScrollTrigger
 //   let tl2 = gsap.timeline({
