@@ -49,11 +49,15 @@ div #suelo {
     z-index: 900;
 }
 
-#loading-screen p {
-    color: #35A335;
-    position: absolute;
-    font-size: 4rem;
-    top: 40%;
+#titulo_load {
+    align-self: center;
+}
+
+#titulo_load img {
+    margin-left: 10rem;
+    padding: 2rem;
+    width: 60%;
+    height: auto;
 }
 
 /* Navegación */
