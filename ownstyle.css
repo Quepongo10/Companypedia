@@ -53,13 +53,6 @@ div #suelo {
     align-self: center;
 }
 
-#titulo_load img {
-    margin-left: 10rem;
-    padding: 2rem;
-    width: 60%;
-    height: auto;
-}
-
 /* Navegación */
 nav ul {
     list-style: none;
