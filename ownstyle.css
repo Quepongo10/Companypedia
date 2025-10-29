@@ -168,42 +168,30 @@ main {
 
 header {
     grid-area: header2;
-    /* background: blueviolet;
-    color: white; */
 }
 
 nav {
     grid-area: nav2;
-    /* background: deeppink;
-    color: white; */
 }
 
 #about {
     grid-area: section2;
-    /* background: white; */
 }
 
 #creatures {
     grid-area: section3;
-    /* background: white; */
 }
 
 #filtro-caracteristicas {
     grid-area: section4;
-    /* background: orange;
-    color: white; */
 }
 
 #filtro-zonas {
     grid-area: section5;
-    /* background: yellow;
-    color: black; */
 }
 
 footer {
     grid-area: footer2;
-    /* background: palevioletred;
-    color: white; */
 }
 
 /*Fin del grid*/
@@ -215,8 +203,6 @@ article {
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 5px;
-    /* padding-top: 2rem;
-    padding-bottom: 5rem; */
 }
 
 #titulo_ani {
@@ -244,7 +230,6 @@ section footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
     gap: 5rem;
     padding-left: 0;
     list-style-type: none;
@@ -254,28 +239,20 @@ section footer {
 #creatures .flex-container>li a {
     width: 300px;
     height: 300px;
-    /* margin-inline: 0.5%; */
-    /* margin-bottom: 5%; */
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     border: 4px solid #35A335;
-    /* flex: 1 1 250px; */
-    /* aspect-ratio: 4/3; */
-    /* overflow: hidden; */
 }
 
 #creatures .flex-container>li a:hover {
-    /* transition-duration: 1s; */
     transform: scale(1.05);
 }
 
 #creatures .flex-container>li a img {
     width: 90%;
     height: 90%;
-    /* display: block; */
-    /* object-fit: cover; */
 }
 
 /* Filtros */
@@ -306,7 +283,6 @@ section footer {
 
 /* Footer */
 footer {
-    /* border: 1px solid #35A335; */
     text-align: center;
     padding: 1rem;
 }
